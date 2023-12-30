@@ -1,27 +1,154 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700;800&display=swap");
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    /* --color-primary: #dd4242; */
+    --color-primary: #16ff00;
+    --color-secondary: black;
+    --color-tertiary: #b0b0b0;
+    --color-subHeading: #717171;
+    /* --color-paragraph: #b5b5b5; */
+    --color-paragraph: #4e4f5f;
+    /* --color-paragraph: black; */
+    /* --color-background: #111319; */
+    --color-background: #ffebd8;
+    --color-background2: #faeed1;
+    --color-background3: #fefae0;
   }
 }
 
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  width: 100%;
+  height: 100vh;
+  font-family: "Prompt", sans-serif;
+  background-color: var(--color-background);
+}
+
+p {
+  color: var(--color-paragraph);
+  font-size: 16px;
+  line-height: 26.24px;
+  font-weight: 400;
+}
+
+h1 {
+  color: var(--color-secondary);
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 39px;
+  text-align: left;
+}
+
+h2 {
+  color: var(--color-secondary);
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 41px;
+  text-align: center;
+}
+
+h3 {
+  color: var(--color-secondary);
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 41.76px;
+  text-align: center;
+}
+
+h4 {
+  color: var(--color-secondary);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 41.76px;
+  text-align: left;
+}
+
+@media (min-width: 640px) {
+  h1 {
+    color: var(--color-secondary);
+    font-weight: 600;
+    font-size: 45px;
+    line-height: 55px;
+    text-align: left;
+  }
+  h2 {
+    color: var(--color-secondary);
+    font-weight: 600;
+    font-size: 40px;
+    line-height: px;
+    text-align: center;
+  }
+  h3 {
+    color: var(--color-secondary);
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 58px;
+    text-align: center;
+  }
+  h4 {
+    color: var(--color-secondary);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 41.76px;
+    text-align: left;
+  }
+}
+
+@media (min-width: 1024px) {
+  h1 {
+    color: var(--color-secondary);
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 70px;
+    text-align: left;
+  }
+  h2 {
+    color: var(--color-secondary);
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 70px;
+    text-align: center;
+  }
+  h3 {
+    color: var(--color-secondary);
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 58px;
+    text-align: center;
+  }
+  h4 {
+    color: var(--color-secondary);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 41.76px;
+    text-align: left;
+  }
+}
+
+.stroke-text {
+  -webkit-text-stroke: 2px var(--color-tertiary);
+}
+
+.process-padding {
+  padding: 0 calc(114px / 2);
+}
+.process-padding-left-0 {
+  padding: 0 calc(114px / 2);
+  padding-left: 0px;
+}
+.process-padding-right-0 {
+  padding: 0 calc(114px / 2);
+  padding-right: 0px;
 }

@@ -1,0 +1,7 @@
+User-Agent: *
+Allow: /
+Allow: /services/
+Allow: /project
+Disallow: /services
+
+Sitemap: https://acme.com/sitemap.xml
