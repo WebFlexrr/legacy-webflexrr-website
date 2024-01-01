@@ -7,7 +7,7 @@ import TagLine from "@/components/Pages/Home/TagLine";
 import Navbar from "@/components/Ui/Navbar/Navbar";
 import OurTeams from "@/components/Pages/Home/OurTeams";
 import ContactUs from "@/components/Pages/Home/ContactUs";
-import SocialCarousel from "@/components/Ui/SocialPostsCorossal.tsx/SocialCarousel";
+import SocialCarousel from "@/components/Ui/SocialPostsCarousel/SocialCarousel";
 
 const Home = (): JSX.Element => {
   return (

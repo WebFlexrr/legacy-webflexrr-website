@@ -32,6 +32,6 @@
     "src/app/Loading.js",
     "next.config.js",
     "postcss.config.js"
-  ],
+, "src/components/Ui/SocialPostsCarousel"  ],
   "exclude": ["node_modules"]
 }

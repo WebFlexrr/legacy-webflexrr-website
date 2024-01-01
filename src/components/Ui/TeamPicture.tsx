@@ -36,7 +36,7 @@ const TeamPicture: FC<TeamPictureProps> = ({ personDetails }) => {
           width={"790"}
           height={"920"}
           alt=""
-          className="relative w-full h-full aspect-[4/5.4] grayscale group-hover:grayscale-0 z-0 transition ease-in-out duration-700"
+          className="relative w-full h-full aspect-[4/5.2] grayscale group-hover:grayscale-0 z-0 transition ease-in-out duration-700"
         />
         <div className="absolute bottom-0 w-full h-16 bg-transparent text-secondary opacity-0 group-hover:opacity-100 translate-y-0 group-hover:-translate-y-4 flex items-center justify-center cursor-pointer transition ease-in-out duration-700">
           <span className="text-lg flex items-center">

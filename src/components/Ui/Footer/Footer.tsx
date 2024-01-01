@@ -180,7 +180,7 @@ const Footer = (): React.JSX.Element => {
               </li>
               <li>
                 <Link
-                  href={"/#home"}
+                  href={"/services"}
                   className="text-secondary  border border-transparent px-2 py-1 hover:border-black hover:bg-primary rounded-full transition ease-in-out duration-500"
                   aria-label="Services"
                 >
@@ -189,16 +189,16 @@ const Footer = (): React.JSX.Element => {
               </li>
               <li>
                 <Link
-                  href={"/#home"}
+                  href={"/portfolio"}
                   className="text-secondary  border border-transparent px-2 py-1 hover:border-black hover:bg-primary rounded-full transition ease-in-out duration-500"
                   aria-label="Gallery"
                 >
-                  Gallery
+                  Our Portfolio
                 </Link>
               </li>
               <li>
                 <Link
-                  href={"/#home"}
+                  href={"/teams"}
                   className="text-secondary  border border-transparent px-2 py-1 hover:border-black hover:bg-primary rounded-full transition ease-in-out duration-500"
                   aria-label="Out teams"
                 >
@@ -207,7 +207,7 @@ const Footer = (): React.JSX.Element => {
               </li>
               <li>
                 <Link
-                  href={"/#home"}
+                  href={"/contact"}
                   className="text-secondary  border border-transparent px-2 py-1 hover:border-black hover:bg-primary rounded-full transition ease-in-out duration-500"
                   aria-label="Contact Us"
                 >

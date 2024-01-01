@@ -103,7 +103,7 @@ const Hero = (): React.JSX.Element => {
                   <span className="text-primary"> Best Experts Lead</span>
                 </h1>
                 <p className="hero1 lg:w-[40rem] mt-4 ">
-                  Welcome to Web Flexrr, Transforming visions into captivating
+                  Welcome to WebFlexrr, Transforming visions into captivating
                   online experiences, our team specializes in cutting-edge web
                   design, seamless web development, powerful digital marketing
                   strategies, SEO optimization, and compelling content creation.

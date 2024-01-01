@@ -1,19 +1,17 @@
-import Hero from "@/components/Pages/Services/Hero";
+import HeroServices from "@/components/Pages/Services/HeroServices";
 import Footer from "@/components/Ui/Footer/Footer";
 import MainTitle from "@/components/Ui/MainTitle";
-import Navbar from "@/components/Ui/Navbar/Navbar";
-import Social_carousel from "@/components/Ui/SocialPostsCorossal.tsx/SocialCarousel";
+import SocialCarousel from "@/components/Ui/SocialPostsCarousel/SocialCarousel";
 import React from "react";
 
-const Services = async (): Promise<React.JSX.Element> => {
+const Services = (): JSX.Element => {
   return (
-    <main className="relative w-full h-screen overflow-y-auto overflow-x-hidden z-30 bg-background2 scroll-smooth">
-      <Navbar />
-      <MainTitle heading={"Services"} picture={""} />
-      <Hero />
-      <Social_carousel />
+    <>
+      <MainTitle heading={"Services"} />
+      <HeroServices />
+      <SocialCarousel />
       <Footer />
-    </main>
+    </>
   );
 };
 

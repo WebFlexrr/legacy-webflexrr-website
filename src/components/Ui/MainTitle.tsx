@@ -5,17 +5,13 @@ import Link from "next/link";
 
 interface MainTitleProps {
   heading: string;
-  picture: string;
 }
-const MainTitle: FC<MainTitleProps> = ({ heading, picture }) => {
+const MainTitle: FC<MainTitleProps> = ({ heading }) => {
   const pathname = usePathname();
   const titlePathname = pathname.split("/").join(" / ");
   return (
     <section className=" relative w-full h-auto">
-      <div
-        className="bg-fixed w-full h-auto  object-cover "
-        // style={{ backgroundImage: `url(${picture})` }}
-      >
+      <div className="bg-fixed w-full h-auto object-cover">
         <section className="w-full h-auto flex flex-col items-center py-24 xl:mt-28">
           <section className="w-fit h-auto flex flex-col gap-4 items-center">
             <h1>{heading}</h1>

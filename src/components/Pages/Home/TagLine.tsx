@@ -44,7 +44,7 @@ const TagLine = (): React.JSX.Element => {
         <section className="w-full max-w-[90rem] mx-auto px-5 md:px-10 flex flex-col gap-10 lg:gap-16 xl:gap-28 ">
           <section className="tagLineContent w-full max-w-5xl mx-auto text-center flex flex-col gap-14">
             <h3>
-              It&apos;s Time To Take Your Digital Marketing To The Next Level We
+              It&apos;s Time To Take Your Digital Presence To The Next Level We
               Are Always Here To Help You Grow Your Business
             </h3>
           </section>
@@ -71,7 +71,7 @@ const TagLine = (): React.JSX.Element => {
                   10+
                 </div>
                 <span className="flex flex-col text-2xl text-left leading-10 text-tertiary hover:text-secondary transition ease-in-out duration-700">
-                  Clients Satisfied
+                  Satisfied Clients
                 </span>
               </div>
               <div className="w-60 lg:w-80 h-32 flex items-center gap-5 ">

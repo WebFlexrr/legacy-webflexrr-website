@@ -1,8 +1,7 @@
 import ServiceDetails from "@/components/Pages/ServiceDetails/ServiceDetails";
 import Footer from "@/components/Ui/Footer/Footer";
 import MainTitle from "@/components/Ui/MainTitle";
-import Navbar from "@/components/Ui/Navbar/Navbar";
-import Social_carousel from "@/components/Ui/SocialPostsCorossal.tsx/SocialCarousel";
+import Social_carousel from "@/components/Ui/SocialPostsCarousel/SocialCarousel";
 import { findServiceByName } from "@/lib/getServices";
 import { type Metadata } from "next";
 import React, { type FC } from "react";
@@ -43,14 +42,13 @@ const page: FC<PageProps> = async ({ params }) => {
   const serviceDetails = await findServiceByName(params.slug);
 
   return (
-    <main className="relative w-full h-screen overflow-y-auto overflow-x-hidden z-30 bg-background2 scroll-smooth">
-      <Navbar />
-      <MainTitle heading={params.slug} picture={""} />
+    <>
+      <MainTitle heading={params.slug} />
       <ServiceDetails serviceDetails={serviceDetails} />
       {/* <CaseStudy/> */}
       <Social_carousel />
       <Footer />
-    </main>
+    </>
   );
 };
 

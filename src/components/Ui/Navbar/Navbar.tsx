@@ -42,15 +42,15 @@ const Navbar = (): React.JSX.Element => {
               </li>
               <li>
                 <a
-                  href={"/our-projects"}
+                  href={"/portfolio"}
                   className="text-secondary hover:text-primary transition ease-in-out duration-500"
                 >
-                  Our Projects
+                  PORTFOLIO
                 </a>
               </li>
               <li>
                 <a
-                  href={"/our-teams"}
+                  href={"/teams"}
                   className="text-secondary hover:text-primary transition ease-in-out duration-500"
                 >
                   TEAMS
