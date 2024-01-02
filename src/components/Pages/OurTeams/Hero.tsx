@@ -6,7 +6,7 @@ import React from "react";
 const Hero = async (): Promise<React.JSX.Element> => {
   const allTeamsDetails = await getAllManagementData();
   return (
-    <section className="w-full h-auto  ">
+    <section className="w-full h-auto">
       <section className="w-full h-auto py-20 px-5 xl:py-36">
         <section className="w-full max-w-[100rem] mx-auto h-auto flex flex-col gap-10">
           <Heading heading={"Top Authorities"} subHeading={"Our Management"} />

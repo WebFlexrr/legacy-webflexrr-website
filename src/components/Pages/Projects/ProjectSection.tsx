@@ -260,12 +260,7 @@ const ProjectSection = async (): Promise<React.JSX.Element> => {
                     className="w-full  aspect-[4/3.3]  col-span-1 "
                   >
                     <Link href={item.projectLink ?? " "} target="_blank">
-                      <ProjectItem
-                        name={item.name}
-                        preview={item.preview}
-                        category={item.category}
-                        projectOwnership={item.projectOwnership}
-                      />
+                      <ProjectItem ProjectItemData={item} />
                     </Link>
                   </div>
                 ) : item.previewSpacing === 2 ? (
@@ -274,12 +269,7 @@ const ProjectSection = async (): Promise<React.JSX.Element> => {
                     className="w-full aspect-[4/3.3] md:aspect-[16/6.4] col-span-1 md:col-span-2 "
                   >
                     <Link href={item.projectLink ?? ""} target="_blank">
-                      <ProjectItem
-                        name={item.name}
-                        preview={item.preview}
-                        category={item.category}
-                        projectOwnership={item.projectOwnership}
-                      />
+                      <ProjectItem ProjectItemData={item} />
                     </Link>
                   </div>
                 ) : item.previewSpacing === 3 ? (
@@ -289,12 +279,7 @@ const ProjectSection = async (): Promise<React.JSX.Element> => {
                   >
                     <div className="w-full h-full ">
                       <Link href={item.projectLink ?? ""} target="_blank">
-                        <ProjectItem
-                          name={item.name}
-                          preview={item.preview}
-                          category={item.category}
-                          projectOwnership={item.projectOwnership}
-                        />
+                        <ProjectItem ProjectItemData={item} />
                       </Link>
                     </div>
                   </section>

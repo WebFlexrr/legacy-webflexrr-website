@@ -13,7 +13,8 @@ const getAllManagementData = async (): Promise<getAllManagementData[]> =>
       youtube,
       instagram,
     }`,
-    { tags: ["management"] },
+    {},
+    { cache: "force-cache", next: { tags: ["management"] } },
   );
 
 export default getAllManagementData;

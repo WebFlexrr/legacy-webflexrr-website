@@ -9,7 +9,8 @@ export const getAllPosts = async (): Promise<getAllPosts[]> =>
       link,
       "image":image.asset->url,
     }`,
-    { tags: ["post"] },
+    {},
+    { cache: "force-cache", next: { tags: ["post"] } },
   );
 
 export default getAllPosts;

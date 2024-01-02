@@ -37,7 +37,7 @@ const SideBar: FC<SideBarProps> = ({ hidden, toggle }) => {
             </li>
             <li className="w-full h-11 p-0 border-b border-subHeading hover:bg-primary ">
               <a
-                href={"/#services"}
+                href={"/services"}
                 onClick={() => {
                   toggle(false);
                 }}
@@ -48,24 +48,24 @@ const SideBar: FC<SideBarProps> = ({ hidden, toggle }) => {
             </li>
             <li className="w-full h-11 p-0 border-b border-subHeading hover:bg-primary ">
               <a
-                href={"/#gallery"}
+                href={"/portfolio"}
                 onClick={() => {
                   toggle(false);
                 }}
                 className="w-full h-full px-5 flex justify-start  text-secondary transition ease-in-out duration-500"
               >
-                Gallery
+                Portfolio
               </a>
             </li>
             <li className="w-full h-11 p-0 border-b border-subHeading hover:bg-primary ">
               <a
-                href={"/#ourTeam"}
+                href={"/team"}
                 onClick={() => {
                   toggle(false);
                 }}
                 className="w-full h-full px-5 flex justify-start  text-secondary transition ease-in-out duration-500"
               >
-                Our Teams
+                Teams
               </a>
             </li>
             {/* <li className="w-full h-11 p-0 border-b border-subHeading hover:bg-primary ">
@@ -77,6 +77,17 @@ const SideBar: FC<SideBarProps> = ({ hidden, toggle }) => {
                 Blogs
               </Link>
             </li> */}
+            <li className="w-full h-11 p-0 border-b border-subHeading hover:bg-primary ">
+              <a
+                href={"/plans"}
+                onClick={() => {
+                  toggle(false);
+                }}
+                className="w-full h-full px-5 flex justify-start  text-secondary transition ease-in-out duration-500"
+              >
+                Plans
+              </a>
+            </li>
             <li className="w-full h-11 p-0 border-b border-subHeading hover:bg-primary ">
               <a
                 href={"/#contactUs"}

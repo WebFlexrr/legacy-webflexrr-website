@@ -5,7 +5,10 @@ export const getAllServices = async (): Promise<getAllServices[]> =>
     `*[_type=="service"]{
       _id,name,"slug":slug.current,description,"image":image.asset->url,_updatedAt
   }`,
-    { tags: ["service"] },
+    {},
+    {
+      next: { tags: ["getAllServices"], revalidate: 3600 },
+    },
   );
 
 export const findServiceByName = async (
@@ -40,5 +43,8 @@ export const findServiceByName = async (
       description,
       _updatedAt
     }`,
-    { tags: ["service"] },
+    {},
+    {
+      next: { tags: ["findServiceByName"], revalidate: 3600 },
+    },
   );

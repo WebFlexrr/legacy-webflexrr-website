@@ -1,8 +1,7 @@
 import Hero from "@/components/Pages/OurTeams/Hero";
-
 import Footer from "@/components/Ui/Footer/Footer";
 
-export default function OurTeams(): JSX.Element {
+const Teams = (): JSX.Element => {
   return (
     <>
       {/* <MainTitle heading={"Our Team"} /> */}
@@ -10,4 +9,6 @@ export default function OurTeams(): JSX.Element {
       <Footer />
     </>
   );
-}
+};
+
+export default Teams;

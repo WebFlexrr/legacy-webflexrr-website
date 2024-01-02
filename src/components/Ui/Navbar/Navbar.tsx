@@ -61,7 +61,7 @@ const Navbar = (): React.JSX.Element => {
                   href={"/plans"}
                   className="text-secondary hover:text-primary transition ease-in-out duration-500"
                 >
-                  Plans
+                  PLANS
                 </Link>
               </li>
               <li>
