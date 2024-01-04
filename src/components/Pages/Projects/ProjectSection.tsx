@@ -251,6 +251,8 @@ const ProjectSection = async (): Promise<React.JSX.Element> => {
               </section>
             </section>
           </section>
+
+          {/* Main Section */}
           <section className="w-full h-auto flex flex-col gap-3 md:gap-4 lg:gap-6 ">
             <section className=" w-full h-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:flex-row flex-wrap gap-4 lg:gap-6 justify-between">
               {sortedProjectList.map((item) =>

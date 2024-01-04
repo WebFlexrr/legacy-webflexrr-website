@@ -5,7 +5,7 @@ import Navbar from "@/components/Ui/Navbar/Navbar";
 
 export const metadata: Metadata = {
   title: {
-    default: "Plans",
+    default: "Contact",
     template: "%s | WebFlexrr Digital Services",
   },
   description: "This is Plan Page of Webflexrr Digital Services",

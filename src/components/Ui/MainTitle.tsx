@@ -11,9 +11,9 @@ const MainTitle: FC<MainTitleProps> = ({ heading }) => {
   const titlePathname = pathname.split("/").join(" / ");
   return (
     <section className=" relative w-full h-auto">
-      <div className="bg-fixed w-full h-auto object-cover">
-        <section className="w-full h-auto flex flex-col items-center py-24 xl:mt-28">
-          <section className="w-fit h-auto flex flex-col gap-4 items-center">
+      <div className=" bg-background3 w-full h-auto flex justify-center py-14 px-8 md:px-5 xl:pb-6 xl:pt-0">
+        <section className=" w-full max-w-[100rem] h-auto flex py-24 xl:mt-28">
+          <section className="w-fit h-auto flex flex-col  gap-4 items-start">
             <h1>{heading}</h1>
             <p className="">
               <Link href={"/"} className="text-primary">

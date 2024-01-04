@@ -12,8 +12,8 @@ interface ServiceItemsProps {
 const ServiceItems: FC<ServiceItemsProps> = ({ title, image, slug }) => {
   return (
     <div className="w-full h-full flex flex-col">
-      <div className="relative w-full h-full  aspect-[4/3] group z-10 overflow-hidden">
-        <Link href={`services/${slug}`}>
+      <div className="relative w-full h-full bg-background3 border border-slate-300 aspect-[4/2.8] group z-10 overflow-hidden">
+        <Link href={`/services/${slug}`} target="_blank">
           <Image
             src={image}
             alt=""
@@ -31,7 +31,8 @@ const ServiceItems: FC<ServiceItemsProps> = ({ title, image, slug }) => {
       </div>
       <div className="w-full flex items-center mt-10 ">
         <Link
-          href={`service/${slug}`}
+          href={`/service/${slug}`}
+          target="_blank"
           className="text-[30px] mx-auto leading-[34.8px] font-semibold text-center text-secondary hover:text-primary transition duration-700 ease-in-out"
         >
           {title}
