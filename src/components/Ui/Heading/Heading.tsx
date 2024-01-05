@@ -37,7 +37,7 @@ const Heading: FC<HeadingProps> = ({ heading, subHeading }) => {
   return (
     <section
       ref={Heading}
-      className=" w-full h-auto flex flex-col gap-3 items-center"
+      className="w-full h-auto flex flex-col gap-3 items-center"
     >
       <span className="galleryHeading text-xl lg:text-2xl leading-7 text-subHeading flex gap-4">
         <PulseCircle />

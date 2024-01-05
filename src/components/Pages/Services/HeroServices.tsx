@@ -8,7 +8,7 @@ const HeroServices = async (): Promise<JSX.Element> => {
       <section className="w-full h-auto py-20 px-8 md:px-5 xl:py-28">
         <section className=" w-full max-w-[100rem] mx-auto h-auto flex flex-col gap-20">
           {/* Heading */}
-          {/* <section className=" w-full max-w-[80rem] h-auto m-auto text-secondary flex flex-col md:flex-row gap-3 md:gap-0  items-center justify-between   ">
+          <section className=" w-full max-w-[80rem] h-auto m-auto text-secondary flex flex-col md:flex-row gap-3 md:gap-0  items-center justify-between   ">
             <section className="w-full md:w-[15%] lg:w-[13%] h-full ">
               <section className=" w-full h-full flex items-center">
                 <svg
@@ -151,7 +151,7 @@ const HeroServices = async (): Promise<JSX.Element> => {
                 </p>
               </section>
             </section>
-          </section> */}
+          </section>
 
           <section className=" w-full h-auto grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-y-14  md:gap-x-20 lg:gap-14 xl:gap-x-[5rem] xl:gap-y-28 ">
             {services.map((items) => (

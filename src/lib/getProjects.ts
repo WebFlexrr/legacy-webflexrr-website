@@ -14,7 +14,7 @@ const getAllProjects = async (): Promise<getAllProjects[]> =>
   projectLink
 }`,
     {},
-    { cache: "force-cache", next: { tags: ["project"] } },
+    { next: { tags: ["project"], revalidate: 3600 } },
   );
 
 export default getAllProjects;

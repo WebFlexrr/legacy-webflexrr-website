@@ -10,7 +10,7 @@ export const getAllPosts = async (): Promise<getAllPosts[]> =>
       "image":image.asset->url,
     }`,
     {},
-    { cache: "force-cache", next: { tags: ["post"] } },
+    { next: { tags: ["post"], revalidate: 3600 } },
   );
 
 export default getAllPosts;

@@ -1,3 +1,4 @@
+import Heading from "@/components/Ui/Heading/Heading";
 import ProjectItem from "@/components/Ui/Projects/ProjectItem";
 import getAllProjects from "@/lib/getProjects";
 import Link from "next/link";
@@ -35,7 +36,7 @@ const ProjectSection = async (): Promise<React.JSX.Element> => {
       <section className=" w-full h-auto  px-5 xl:py-36 xl:pb-20">
         <section className=" w-full max-w-[100rem] mx-auto h-auto flex flex-col gap-20 ">
           {/* Heading */}
-          <section className=" w-full h-auto text-secondary flex flex-col md:flex-row gap-3 md:gap-0  items-center ">
+          {/* <section className=" w-full h-auto text-secondary flex flex-col md:flex-row gap-3 md:gap-0  items-center ">
             <section className=" w-full md:w-[15%] lg:w-[20%] h-full  ">
               <section className="  w-full h-full flex items-center   ">
                 <svg
@@ -250,7 +251,8 @@ const ProjectSection = async (): Promise<React.JSX.Element> => {
                 </p>
               </section>
             </section>
-          </section>
+          </section> */}
+          <Heading heading={"Gallery"} subHeading={"Our Project Portfolio"} />
 
           {/* Main Section */}
           <section className="w-full h-auto flex flex-col gap-3 md:gap-4 lg:gap-6 ">

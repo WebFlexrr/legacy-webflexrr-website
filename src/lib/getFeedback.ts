@@ -13,7 +13,7 @@ const getAllFeedback = async (): Promise<getAllFeedback[]> =>
       _type
     }`,
     {},
-    { cache: "force-cache", next: { tags: ["feedback"] } },
+    { next: { tags: ["feedback"], revalidate: 3600 } },
   );
 
 export default getAllFeedback;

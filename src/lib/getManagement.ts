@@ -14,7 +14,7 @@ const getAllManagementData = async (): Promise<getAllManagementData[]> =>
       instagram,
     }`,
     {},
-    { cache: "force-cache", next: { tags: ["management"] } },
+    { next: { tags: ["management"], revalidate: 3600 } },
   );
 
 export default getAllManagementData;
