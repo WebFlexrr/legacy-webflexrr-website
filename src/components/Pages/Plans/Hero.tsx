@@ -7,7 +7,6 @@ interface HeroProps {
 }
 const Hero: FC<HeroProps> = ({ plans }): React.JSX.Element => {
   const [plan, setPlan] = useState<getAllPlans>(plans[0]);
-  // const [time, setTime] = useState<string>("Monthly");
 
   return (
     <>
@@ -124,7 +123,7 @@ const Hero: FC<HeroProps> = ({ plans }): React.JSX.Element => {
                 {plan.plans.map((item) => (
                   <section
                     key={item._key}
-                    className="border-2  border-secondary rounded-md w-full h-auto flex flex-col "
+                    className="w-full h-auto border-2  border-secondary rounded-md  flex flex-col "
                   >
                     {/* heading */}
                     <section className=" w-full h-auto pt-[4.5rem] pb-[3rem] flex flex-col gap-10 justify-center items-center">
@@ -257,17 +256,17 @@ const Hero: FC<HeroProps> = ({ plans }): React.JSX.Element => {
                       </svg>
                     </div> */}
                       <div className="flex gap-2">
-                        <span className="text-secondary text-[60px] leading-[60px] font-semibold">
+                        <span className="text-secondary text-[40px] leading-[40px] font-semibold">
                           {item.months}
                         </span>
-                        <span className="text-secondary leading-[26.24px]">
-                          month
+                        <span className="text-secondary text-lg leading-[26.24px]">
+                          month plan
                         </span>
                       </div>
                     </section>
                     {/* mid Section */}
-                    <section className=" w-full h-auto text-secondary flex flex-col justify-center items-center">
-                      <ul className=" w-full h-auto list-disc flex flex-col gap-4 items-center text-base leading-[28.8px] text-center">
+                    <section className="border-y-2 border-black w-full h-auto py-4  text-secondary flex flex-col justify-center items-center ">
+                      <ul className=" w-full h-auto px-10 list-disc flex flex-col gap-4 items-center text-base leading-[28.8px] text-left">
                         {item.service.map((service, index) => (
                           <li key={index}>{service}</li>
                         ))}

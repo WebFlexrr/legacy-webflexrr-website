@@ -6,7 +6,7 @@ import React from "react";
 const Plans = (): React.JSX.Element => {
   return (
     <>
-      <MainTitle heading={"Our Plans"} />
+      <MainTitle heading={"Contact"} />
       <ProjectSection />
       <Footer />
     </>
