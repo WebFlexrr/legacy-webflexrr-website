@@ -83,3 +83,15 @@ interface getAllFeedback {
   image: string;
   _type: string;
 }
+
+interface Plans {
+  _key: string;
+  name: string;
+  months: number;
+  service: string[];
+}
+interface getAllPlans {
+  id: number;
+  name: name;
+  plans: Plans[];
+}

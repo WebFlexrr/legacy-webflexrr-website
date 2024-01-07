@@ -171,7 +171,7 @@ const Footer = (): React.JSX.Element => {
             <ul className="w-fit  flex flex-wrap gap-2 items-center py-auto">
               <li>
                 <Link
-                  href={"/#home"}
+                  href={"/home"}
                   className="text-secondary  border border-transparent px-2 py-1 hover:border-black hover:bg-primary rounded-full transition ease-in-out duration-500"
                   aria-label="Home"
                 >
@@ -191,18 +191,27 @@ const Footer = (): React.JSX.Element => {
                 <Link
                   href={"/portfolio"}
                   className="text-secondary  border border-transparent px-2 py-1 hover:border-black hover:bg-primary rounded-full transition ease-in-out duration-500"
-                  aria-label="Gallery"
+                  aria-label="Portfolio"
                 >
-                  Our Portfolio
+                  Portfolio
                 </Link>
               </li>
               <li>
                 <Link
                   href={"/teams"}
                   className="text-secondary  border border-transparent px-2 py-1 hover:border-black hover:bg-primary rounded-full transition ease-in-out duration-500"
-                  aria-label="Out teams"
+                  aria-label="Our teams"
                 >
                   Our Teams
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href={"/plans"}
+                  className="text-secondary  border border-transparent px-2 py-1 hover:border-black hover:bg-primary rounded-full transition ease-in-out duration-500"
+                  aria-label="Out Plans"
+                >
+                  Plans
                 </Link>
               </li>
               <li>
