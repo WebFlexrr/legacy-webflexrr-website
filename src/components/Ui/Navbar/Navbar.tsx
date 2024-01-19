@@ -66,7 +66,7 @@ const Navbar = (): React.JSX.Element => {
               </li>
               <li>
                 <a
-                  href={"/#contactUs"}
+                  href={"/contact"}
                   className="text-secondary hover:text-primary transition ease-in-out duration-500"
                 >
                   CONTACT US

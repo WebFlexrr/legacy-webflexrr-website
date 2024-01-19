@@ -12,7 +12,7 @@ const MainTitle: FC<MainTitleProps> = ({ heading }) => {
   return (
     <section className=" relative w-full h-auto">
       <div className=" bg-background3  w-full h-auto flex justify-center px-8 md:px-5 xl:pt-0">
-        <section className=" w-full max-w-[100rem] h-auto flex justify-center md:justify-start py-16 mt-16 md:pt-24 lg:mt-24 xl:pt-28 ">
+        <section className=" w-full max-w-[100rem] h-auto flex justify-center md:justify-start py-16 mt-16 md:pt-24 lg:mt-24 xl:pt-28 xl:pb-28 ">
           <section className="w-fit h-auto flex flex-col  gap-4 items-center md:items-start">
             <h1>{heading}</h1>
             <p className="">

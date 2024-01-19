@@ -6,7 +6,7 @@ import useIsomorphicLayoutEffect from "@/helper/isomorphicEffect";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import TextPlugin from "gsap/TextPlugin";
 interface HeadingProps {
-  heading?: string;
+  heading: string | null;
   subHeading: string;
 }
 
@@ -39,12 +39,18 @@ const Heading: FC<HeadingProps> = ({ heading, subHeading }) => {
       ref={Heading}
       className="w-full h-auto flex flex-col gap-3 items-center"
     >
-      <span className="galleryHeading text-xl lg:text-2xl leading-7 text-subHeading flex gap-4">
-        <PulseCircle />
-        {heading}
-        <PulseCircle flowDirection="right" />
-      </span>
-      <h2 className=" galleryHeading mb-10">{subHeading}</h2>
+      {heading != null ? (
+        <>
+          <span className="galleryHeading text-xl lg:text-2xl leading-7 text-subHeading flex gap-4">
+            <PulseCircle />
+            {heading}
+            <PulseCircle flowDirection="right" />
+          </span>
+          <h2 className=" galleryHeading mb-10">{subHeading}</h2>
+        </>
+      ) : (
+        <h2 className=" galleryHeading">{subHeading}</h2>
+      )}
     </section>
   );
 };

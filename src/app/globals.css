@@ -167,6 +167,12 @@ h4 {
     line-height: 41.76px;
     text-align: left;
   }
+  h5 {
+    color: var(--color-secondary);
+    font-weight: 400;
+    font-size: 26px;
+    text-align: start;
+  }
 }
 
 .stroke-text {
