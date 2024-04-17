@@ -7,7 +7,7 @@ import Image from "next/image";
 import React, { type FC, useRef } from "react";
 
 interface TechnologiesProps {
-  weAreUsing: ServiceWeAreUsing[];
+  weAreUsing: ServiceWeAreUsing[] | null;
 }
 const Technologies: FC<TechnologiesProps> = ({ weAreUsing }) => {
   const technologies = useRef<HTMLDivElement>(null);

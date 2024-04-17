@@ -15,5 +15,4 @@ const getAllFeedback = async (): Promise<getAllFeedback[]> =>
     {},
     { next: { tags: ["feedback"], revalidate: 3600 } },
   );
-
 export default getAllFeedback;

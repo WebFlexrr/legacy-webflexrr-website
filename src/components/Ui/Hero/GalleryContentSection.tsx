@@ -4,17 +4,10 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Image from "next/image";
 import Link from "next/link";
-import React, { type FC, useRef } from "react";
+import React from "react";
 import PulseCircle from "../PulseCircle";
 
-interface GalleryContentSectionProps {
-  projects: getAllProjects[];
-}
-
-const GalleryContentSection: FC<GalleryContentSectionProps> = ({
-  projects,
-}) => {
-  const gallerySection2 = useRef<HTMLDivElement>(null);
+const GalleryContentSection = (): React.JSX.Element => {
   gsap.registerPlugin(ScrollTrigger);
   useIsomorphicLayoutEffect(() => {
     const ctx = gsap.context(() => {
@@ -150,10 +143,7 @@ const GalleryContentSection: FC<GalleryContentSectionProps> = ({
             </div>
           </div>
         </section>
-        <section
-          ref={gallerySection2}
-          className=" relative w-full xl:h-[30rem] flex flex-col xl:flex-row gap-5 md:gap-5 xl:gap-0"
-        >
+        <section className=" relative w-full xl:h-[30rem] flex flex-col xl:flex-row gap-5 md:gap-5 xl:gap-0">
           <div className=" galleryContent1 relative w-full xl:w-1/2 h-96 lg:h-full my-8 xl:my-0  flex justify-center items-center bg-background">
             <div className="w-full xl:max-w-lg h-auto px-6  flex flex-col gap-10">
               <h2 className="text-left text-[50px]  before:absolute before:content-[''] before:w-24 before:h-24 before:rounded-full before:bg-primary before:-z-20 -z-10">

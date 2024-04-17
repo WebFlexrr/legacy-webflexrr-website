@@ -8,11 +8,11 @@ const sitemap = async (): Promise<
 > => {
   const baseUrl = "https://www.webflexrr.com";
 
-  const services = await getAllServices();
+  const services = getAllServices();
 
   const serviceUrls = services.map((service) => ({
     url: `${baseUrl}/services/${service.slug}`,
-    lastModified: service._updatedAt,
+    lastModified: new Date(service._updatedAt),
   }));
 
   return [

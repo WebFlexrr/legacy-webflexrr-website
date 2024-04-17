@@ -7,7 +7,7 @@ import Image from "next/image";
 import React, { type FC, useRef } from "react";
 
 interface CoreServicesProps {
-  services: ServiceServices[];
+  services: ServiceServices[] | null;
 }
 
 const CoreServices: FC<CoreServicesProps> = ({ services }) => {

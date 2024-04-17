@@ -3,8 +3,8 @@ import Heading from "../../Ui/Heading/Heading";
 import ServiceSection from "@/components/Ui/Hero/ServiceSection";
 import { getAllServices } from "@/lib/getServices";
 
-const Services = async (): Promise<React.JSX.Element> => {
-  const services = await getAllServices();
+const Services = (): React.JSX.Element => {
+  const services = getAllServices();
 
   return (
     <section className=" services w-full h-auto " id={"services"}>

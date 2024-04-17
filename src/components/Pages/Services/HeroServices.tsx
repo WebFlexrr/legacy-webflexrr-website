@@ -1,8 +1,9 @@
 import ServiceItems from "@/components/Ui/Services/ServiceItems";
 import { getAllServices } from "@/lib/getServices";
 
-const HeroServices = async (): Promise<JSX.Element> => {
-  const services = await getAllServices();
+const HeroServices = (): JSX.Element => {
+  const services = getAllServices();
+
   return (
     <section className="w-full h-auto ">
       <section className="w-full h-auto py-20 px-8 md:px-5 xl:py-28">

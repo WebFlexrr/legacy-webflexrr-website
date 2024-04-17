@@ -1,11 +1,12 @@
-interface getAllServices {
-  _id: string;
-  name: string;
-  slug: string;
-  description: string;
-  image: string;
-  _updatedAt: Date;
-}
+// interface getAllServices {
+//   _type: string;
+//   _id: string;
+//   name: string;
+//   slug: string;
+//   description: string;
+//   image: string;
+//   _updatedAt: string;
+// }
 
 interface ServiceProcedure {
   _key: string;
@@ -29,17 +30,17 @@ interface ServiceWeAreUsing {
   iconImage: string;
 }
 
-interface findServiceByName {
+interface getAllServices {
   _id: string;
   name: string;
   description: string;
   slug: string;
   _type: string;
   image: string;
-  procedure: ServiceProcedure[];
-  services: ServiceServices[];
-  weAreUsing: ServiceWeAreUsing[];
-  _updatedAt: Date;
+  procedure: ServiceProcedure[] | null;
+  services: ServiceServices[] | null;
+  weAreUsing: ServiceWeAreUsing[] | null;
+  _updatedAt: string;
 }
 
 interface getAllProjects {
@@ -68,10 +69,10 @@ interface getAllManagementData {
   slug: string;
   profileImage: string;
   position: string;
-  linkedIn: string | null;
-  twitter: string | null;
-  youtube: string | null;
-  instagram: string | null;
+  linkedIn?: string | null;
+  twitter?: string | null;
+  youtube?: string | null;
+  instagram?: string | null;
 }
 interface getAllFeedback {
   _id: string;

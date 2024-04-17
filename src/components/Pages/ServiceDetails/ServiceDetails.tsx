@@ -6,7 +6,7 @@ import PulseCircle from "@/components/Ui/PulseCircle";
 import Technologies from "./Technologies";
 
 interface ServiceDetailsProps {
-  serviceDetails: findServiceByName;
+  serviceDetails: getAllServices;
 }
 
 const ServiceDetails: FC<ServiceDetailsProps> = async ({ serviceDetails }) => {

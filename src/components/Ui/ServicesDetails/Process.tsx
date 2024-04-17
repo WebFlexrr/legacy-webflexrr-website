@@ -9,7 +9,7 @@ import { Navigation, Pagination } from "swiper/modules";
 import SwiperButtonComponent from "../SwiperButtonComponent";
 
 interface ProcessProps {
-  process: ServiceProcedure[];
+  process: ServiceProcedure[] | null;
 }
 const Process: FC<ProcessProps> = ({ process }) => {
   return (

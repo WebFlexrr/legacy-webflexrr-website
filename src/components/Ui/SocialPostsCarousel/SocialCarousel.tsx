@@ -1,8 +1,8 @@
-import getAllPosts from "@/lib/getPosts";
+import { getAllPosts } from "@/lib/getPosts";
 import SocialCarouselSwiper from "./SocialCarouselSwiper";
 
-const SocialCarousel = async (): Promise<JSX.Element> => {
-  const posts = await getAllPosts();
+const SocialCarousel = (): JSX.Element => {
+  const posts = getAllPosts();
   return <SocialCarouselSwiper posts={posts} />;
 };
 

@@ -1,10 +1,10 @@
 import Heading from "@/components/Ui/Heading/Heading";
 import TeamPicture from "@/components/Ui/TeamPicture";
-import getAllManagementData from "@/lib/getManagement";
+import { getAllManagementData } from "@/lib/getManagement";
 import React from "react";
 
-const Hero = async (): Promise<React.JSX.Element> => {
-  const allTeamsDetails = await getAllManagementData();
+const Hero = (): React.JSX.Element => {
+  const allTeamsDetails = getAllManagementData();
   return (
     <section className="w-full h-auto">
       <section className="w-full h-auto py-20 px-5 xl:py-36">

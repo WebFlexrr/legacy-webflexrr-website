@@ -15,7 +15,7 @@ interface PageProps {
 export const generateMetadata = async ({
   params,
 }: PageProps): Promise<Metadata> => {
-  const serviceDetails = await findServiceByName(params.slug);
+  const serviceDetails = findServiceByName(params.slug);
 
   // eslint-disable-next-line @typescript-eslint/strict-boolean-expressions
   if (!serviceDetails) {
@@ -39,7 +39,7 @@ export const generateMetadata = async ({
 };
 
 const page: FC<PageProps> = async ({ params }) => {
-  const serviceDetails = await findServiceByName(params.slug);
+  const serviceDetails = findServiceByName(params.slug);
 
   return (
     <>

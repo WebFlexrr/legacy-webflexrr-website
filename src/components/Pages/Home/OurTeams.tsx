@@ -1,10 +1,10 @@
 import Heading from "@/components/Ui/Heading/Heading";
 import React from "react";
 import TeamSwiper from "@/components/Ui/Hero/TeamSwiper";
-import getAllManagementData from "@/lib/getManagement";
+import { getAllManagementData } from "@/lib/getManagement";
 
-const OurTeams = async (): Promise<React.JSX.Element> => {
-  const allTeamsDetails = await getAllManagementData();
+const OurTeams = (): React.JSX.Element => {
+  const allTeamsDetails = getAllManagementData();
 
   return (
     <section id={"ourTeam"} className=" relative w-full h-auto bg-background3 ">
